@@ -30,6 +30,7 @@ main{
     width: auto;
     height: max-content;  
     background-color: #2229;
+    backdrop-filter: blur(10px);
 }
 
 .aside__img{
@@ -182,7 +183,8 @@ hr{
     }
 
     .info__more-container{
-        min-width: 230px;
+        width: 230px;
+        
     }
 
 }
@@ -194,15 +196,17 @@ hr{
     .aside__info-more-container{
         justify-content: start;
     }
+
+    .info__more-icon{
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    svg{
+        width: 15px;
+    }
+
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -294,6 +298,7 @@ hr{
         border: 1px solid #fff4;
         border-radius: 10px 10px 0 0;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .main__ul-container{
