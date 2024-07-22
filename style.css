@@ -29,8 +29,8 @@ main{
     min-width: 250px;
     width: auto;
     height: max-content;  
-    background-color: #2229;
-    backdrop-filter: blur(10px);
+    background-color: #1d1d1d;
+    backdrop-filter: blur(90px);
 }
 
 .aside__img{
@@ -44,7 +44,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0;
 }
 
 .aside__info-name{
@@ -90,7 +89,7 @@ hr{
     justify-content: center;
     min-width: 50px;
     min-height: 50px;
-    background: #2229;
+    background: #222;
     border-top: 0.1px solid rgb(68, 68, 68);
     border-left: 0.1px solid rgb(68, 68, 68);
     border-radius: 10px;
@@ -128,7 +127,10 @@ hr{
 
 .social__link img{
     width: 20px;
-    
+}
+
+.social__link img:hover{
+    opacity: 0.85;
 }
 
 
@@ -138,6 +140,10 @@ hr{
 
 
 @media screen and (max-width:1200px){
+
+    body{
+        margin: 0 15px;
+    }
 
     main{
         flex-direction: column;
@@ -217,13 +223,12 @@ hr{
 
 .main__container{
     position: relative;
-    background-color: #222;
+    background-color: #1d1d1d;
     width: 100%;
     padding: 15px ;
     border: 1px solid #fff4;
     border-radius: 20px;
     height: 100vh;   
-    background-color: #2229;
 }
 
 
@@ -263,7 +268,7 @@ hr{
 } 
 
 .main__nav-item a:active{
-    color: #c18a00;
+    color: gold;
 } 
 
 
