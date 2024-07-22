@@ -2,7 +2,7 @@
 
 
 body {
-    margin: 30px 50px;
+    margin: 30px 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     color: #ffffffd5;
@@ -43,19 +43,21 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0;
 }
 
 .aside__info-name{
     font-size: 1.7rem;
     text-align: center;
+    margin: 10px 0;
 }
 
 .aside__info-profesion{
     font-size: 13px;
     font-weight: 100;
-    width: 150px;
+    max-width: max-content;
     padding: 10px;
-    margin: 0 auto 20px ;
+    margin: 10px auto;
     text-align: center;
     border-radius: 8px;
     background-color: #fff1;
@@ -149,24 +151,26 @@ hr{
 
     .aside__info-principal-container{
         display: flex;
-        gap: 20px;
+        gap: 12px;
         margin-left: 10px;
         align-items: center;
     }
 
     .aside__img{
-        width: 100px;
+        width: 80px;
     }
 
     .aside__info-name{
-        font-size: 1.55rem;
+        font-size: 1.3rem;
         margin-bottom: 5px;
         padding: 0;
     }
 
     .aside__info-profesion{
-        font-size: 0.7rem;
-        margin-top: 10px;
+        font-size: 0.5rem;
+        padding: 8px;
+        margin: 0;
+        width: max-content;
         width: 80%;
 
     }
@@ -184,11 +188,12 @@ hr{
 }
 
 
-@media screen and (max-width:650px){
+
+@media screen and (max-width:560px){
 
     .aside__info-more-container{
         justify-content: start;
-     }
+    }
 }
 
 
@@ -211,10 +216,9 @@ hr{
     background-color: #222;
     width: 100%;
     padding: 15px ;
-    justify-content: end;
     border: 1px solid #fff4;
     border-radius: 20px;
-    height: 150vh;   
+    height: 100vh;   
     background-color: #2229;
 }
 
@@ -230,19 +234,19 @@ hr{
     border-radius: 0 0 0 20px;
     width: max-content;
     background-color: #fff1;
+    padding: 6px;
 }
 
 
 .main__ul-container{
     display: flex;
     list-style: none;
-    box-sizing: border-box;
+    justify-content: center;
+    padding: 0;
 }
 
 .main__nav-item{
-    padding: 10px;
-    margin-right: 30px;
-    
+    padding: 0 30px;
 }
 
 .main__nav-item a{
@@ -270,6 +274,37 @@ hr{
         width: auto;
     }
 
+
 }
 
+@media screen and (max-width:650px){
+
+    .main__container{
+        margin-bottom: 50px;
+    }
+
+
+    .main__nav-bar{
+        position: fixed;
+        top: auto;
+        right: 3px;
+        bottom: 0;
+        left: 3px;
+        width: auto;
+        border: 1px solid #fff4;
+        border-radius: 10px 10px 0 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .main__ul-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main__nav-item{
+        font-size: 0.8rem;
+        padding: 3px 10px;
+    }
+    
+}
 
