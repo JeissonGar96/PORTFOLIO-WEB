@@ -283,6 +283,63 @@ hr{
     color: gold;
 } 
 
+.content {
+    display: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos específicos para cada sección */
+.about h1, .portfolio h1, .blog h1, .contact h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: gold;
+}
+
+.about p, .portfolio p, .blog p, .contact p {
+    font-size: 1.2em;
+}
+
+.portfolio ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.blog article {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input, .contact form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff4;
+}
+
+.contact form button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gold;
+    color: #1d1d1d;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mostrar la sección activa */
+.content.active {
+    display: block;
+}
 
 /*                                 *\
    -------- MAIN QUERIES -------- 
@@ -298,7 +355,7 @@ hr{
 
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:710px){
 
     .main__container{
         margin-bottom: 50px;
