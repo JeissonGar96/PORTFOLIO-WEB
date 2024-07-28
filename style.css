@@ -25,7 +25,7 @@ main{
     top: 30px;
     justify-content: center;
     padding: 15px;
-    border: 1px solid #fff4;
+    border: 1px solid #3c3c3c;
     border-radius: 20px;
     min-width: 250px;
     width: auto;
@@ -91,8 +91,10 @@ hr{
     min-width: 50px;
     min-height: 50px;
     background: #222;
-    border-top: 0.1px solid rgb(68, 68, 68);
-    border-left: 0.1px solid rgb(68, 68, 68);
+    border-top: 0.1px solid #444444;
+    border-left: 0.1px solid #444444;
+    border-bottom: 0.1px solid #202020;
+    border-right: 0.1px solid #202020;
     border-radius: 10px;
 }
 
@@ -244,7 +246,7 @@ hr{
     background-color: #1d1d1d;
     width: 100%;
     padding: 15px ;
-    border: 1px solid #fff4;
+    border: 1px solid #3c3c3c;
     border-radius: 20px;
     height: 100vh;   
 }
@@ -296,21 +298,21 @@ hr{
 
 /* Estilos específicos para cada sección */
 
-.class-title {
+.main-title {
     position: relative;
-    padding-bottom: 10px; /* Aumenta el padding-bottom para asegurarse de que haya espacio para la barra */
+    padding-bottom: 10px;
     font-size: 2em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #fff;
 }
 
-.class-title::after {
+.main-title::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Ajusta la posición inferior para que esté justo debajo del texto */
+    bottom: 0; 
     left: 0;
-    width: 40px; /* Asegúrate de que sea 40px */
-    height: 5px; /* Asegúrate de que sea 5px */
+    width: 35px; 
+    height: 4px; 
     background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
     border-radius: 3px;
 }
