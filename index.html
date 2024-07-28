@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -86,20 +89,29 @@
         </aside>
 
         <div class="main__container">
+            
             <nav class="main__nav-bar">
                 <ul class="main__ul-container">
-                    <li class="main__nav-item"><a href="#about">About</a></li>
-                    <li class="main__nav-item"><a href="#portfolio">Portfolio</a></li>
-                    <li class="main__nav-item"><a href="#blog">Blog</a></li>
-                    <li class="main__nav-item"><a href="#contact">Contact</a></li>
+                    <li class="main__nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="main__nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="main__nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="main__nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            
             <div id="about" class="content about active">
-                <h1>About</h1>
-                <p>This is the About section with more details and styled content.</p>
+                <div class="header">
+                    <h1 class="main-title">About Me</h1>
+                </div>
+                <p> I'm Creative Director and UI/UX Designer from Sydney, Australia, 
+                    working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                    <br><br>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+                </p>
             </div>
+            
             <div id="portfolio" class="content portfolio">
-                <h1>Portfolio</h1>
+                <h1 class="main-title">Portfolio</h1>
                 <p>This is the Portfolio section showcasing various projects.</p>
                 <ul>
                     <li>Project 1</li>
@@ -107,8 +119,9 @@
                     <li>Project 3</li>
                 </ul>
             </div>
+           
             <div id="blog" class="content blog">
-                <h1>Blog</h1>
+                <h1 class="main-title">Blog</h1>
                 <p>Welcome to the Blog section. Here are some recent posts:</p>
                 <article>
                     <h2>Post Title 1</h2>
@@ -119,8 +132,9 @@
                     <p>Summary of blog post 2...</p>
                 </article>
             </div>
+           
             <div id="contact" class="content contact">
-                <h1>Contact</h1>
+                <h1 class="main-title">Contact</h1>
                 <p>This is the Contact section. Get in touch with us!</p>
                 <form>
                     <label for="name">Name:</label>
@@ -132,6 +146,7 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
+        
         </div>
         <script src="script.js"></script>
     </main>

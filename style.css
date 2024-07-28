@@ -1,6 +1,10 @@
+*{
+    font-family: "Montserrat";
+}
+
+
 body {
     margin: 30px 15px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     color: #ffffffd5;
 }
@@ -251,8 +255,8 @@ hr{
     right: 0;
     left: auto;
     bottom: auto;
-    border-bottom: 1px solid #fff4;
-    border-left: 1px solid #fff4;;
+    border-bottom: 1px solid #3c3c3c;
+    border-left: 1px solid #3c3c3c;;
     border-radius: 0 0 0 20px;
     width: max-content;
     background-color: #fff1;
@@ -279,7 +283,7 @@ hr{
     opacity: 0.8;
 } 
 
-.main__nav-item a:active{
+.main__nav-item .nav-link.active{
     color: gold;
 } 
 
@@ -291,14 +295,33 @@ hr{
 }
 
 /* Estilos específicos para cada sección */
-.about h1, .portfolio h1, .blog h1, .contact h1 {
+
+.class-title {
+    position: relative;
+    padding-bottom: 10px; /* Aumenta el padding-bottom para asegurarse de que haya espacio para la barra */
     font-size: 2em;
     margin-bottom: 50px;
-    color: gold;
+    color: #fff;
 }
 
+.class-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Ajusta la posición inferior para que esté justo debajo del texto */
+    left: 0;
+    width: 40px; /* Asegúrate de que sea 40px */
+    height: 5px; /* Asegúrate de que sea 5px */
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    border-radius: 3px;
+}
+
+
 .about p, .portfolio p, .blog p, .contact p {
-    font-size: 1.2em;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #c8c8c8;
+    font-weight: 400;
+
 }
 
 .portfolio ul {
