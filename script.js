@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.content');
     const navLinks = document.querySelectorAll('.nav-link');
+    const toggleButton = document.querySelector(".aside__toggle-button");
+    const infoMoreContainer = document.querySelector(".aside__info-more-container");
+    const hrElements = document.querySelectorAll('.separador-hr');
+    const socialContainer = document.querySelector('.aside__social-container');
 
     // Función para ocultar todas las secciones
     function hideAllSections() {
@@ -26,5 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
         });
     });
+
+    // Evento para el botón de alternancia del aside
+    toggleButton.addEventListener("click", function() {
+        infoMoreContainer.classList.toggle("show");
+        hrElements.forEach(hr => hr.classList.toggle("show"));
+        socialContainer.classList.toggle("show");
+    });
 });
+
 

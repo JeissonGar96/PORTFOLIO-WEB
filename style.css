@@ -55,7 +55,7 @@ main{
 
 .aside__info-profesion{
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 300;
     max-width: max-content;
     padding: 10px;
     margin: 10px auto;
@@ -64,7 +64,7 @@ main{
     background-color: #fff1;
 }
 
-hr{
+.separador-hr{
     margin-top: 10px;
     opacity: 0.2;
 }
@@ -85,7 +85,7 @@ hr{
 
 .info__more-icon{
     display: flex;
-    color: gold;
+    color: #ffbf64;
     align-items: center;
     justify-content: center;
     min-width: 50px;
@@ -104,6 +104,7 @@ hr{
     justify-content: start;
     margin-left: 10px;
     align-content: center;
+    
 }
 
 .info__more-title{
@@ -112,11 +113,14 @@ hr{
     color: rgb(173, 171, 171);
 }
 
-.info__more-link{
+.info__more-link{   
     text-decoration: none;
     color: #fff;
     font-size: 13px;
     margin: 0;
+    width: 140px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .aside__social-container{
@@ -133,6 +137,21 @@ hr{
 
 .social__link img:hover{
     opacity: 0.85;
+}
+
+.aside__toggle-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #1d1d1d;
+    color: #fff;
+    border: none;
+    border-top: 1px solid #ffbb5c88;
+    border-right: 1px solid #ffbb5c88;;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 0px 10px;
+    display: none;
 }
 
 
@@ -161,11 +180,13 @@ hr{
         display: flex;
         gap: 20px;
         margin-left: 10px;
+        margin-top: 0;
         align-items: center;
     }
 
     .aside__img{
         width: 120px;
+        margin: 10px auto;
     }
 
     .aside__info-name{
@@ -192,6 +213,24 @@ hr{
         width: 230px;
     }
 
+    .aside__toggle-button {
+        display: block;
+    }
+
+    /* Ocultar el contenedor inicialmente */
+    .aside__info-more-container, .separador-hr, .aside__social-container {
+        display: none;
+    }
+
+    
+    /* Mostrar el contenedor cuando se añade la clase 'show' */
+    .aside__info-more-container.show, .aside__social-container.show {
+        display: flex;
+    }
+
+    .separador-hr.show{
+        display: block;
+    }
 
 }
 
@@ -248,7 +287,7 @@ hr{
     padding: 15px ;
     border: 1px solid #3c3c3c;
     border-radius: 20px;
-    height: 100vh;   
+    height: max-content;   
 }
 
 .main__nav-bar{
@@ -279,6 +318,7 @@ hr{
 .main__nav-item a{
     color: #fff;
     text-decoration: none;
+    font-weight: 500;
 } 
 
 .main__nav-item a:hover{
@@ -286,7 +326,7 @@ hr{
 } 
 
 .main__nav-item .nav-link.active{
-    color: gold;
+    color: #ffbf64;
 } 
 
 .content {
@@ -375,8 +415,7 @@ hr{
 
     .main__container{
         width: auto;
-    }
-
+    }  
 
 }
 
@@ -407,6 +446,14 @@ hr{
     .main__nav-item{
         font-size: 0.8rem;
         padding: 3px 10px;
+    }
+
+    .content{
+        padding: 5px;
+    }
+
+    .main-title{
+        margin: 0 0 30px;
     }
     
 
