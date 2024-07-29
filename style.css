@@ -357,22 +357,48 @@ main{
     border-radius: 3px;
 }
 
-
-.about p, .portfolio p, .blog p, .contact p {
+.about p {
     font-size: 0.9em;
     line-height: 1.5em;
     color: #c8c8c8;
     font-weight: 400;
-
 }
 
-.portfolio ul {
-    list-style-type: square;
-    margin-left: 20px;
+.section-container{
+    display: grid;
+    grid-template-columns: 50% 2fr;
+    grid-template-areas:  50px 2fr;
+    gap: 30px;
+    
 }
 
-.blog article {
-    margin-bottom: 20px;
+.section__doing-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    min-height: 120px;
+    background: #222;
+    border-top: 0.1px solid #444444;
+    border-left: 0.1px solid #444444;
+    border-bottom: 0.1px solid #202020;
+    border-right: 0.1px solid #202020;
+    border-radius: 10px;
+}
+
+.doing-container p{
+    font-size: 0.7em;
+    max-width: 200px;
+}
+
+.doing-title{
+    color: #fff;
+    font-size: 1em;
+}
+
+.doing-text{
+    color: #000;
 }
 
 .contact form {
@@ -405,6 +431,8 @@ main{
 .content.active {
     display: block;
 }
+
+
 
 /*                                 *\
    -------- MAIN QUERIES -------- 
